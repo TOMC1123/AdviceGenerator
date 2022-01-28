@@ -2,7 +2,7 @@
 const doSomething = ['Sell Your House', 'Quit Your Job', 'Sell Your Car', 'Join a Gym', 'Throw Your Phone Off a Bridge', 'Delete Facebook', 'put all your money on red', 'Shave Your Head', 'Fake Your Death' ]
 const move = ['Move to Miami', 'Move to New York', 'Move to Morocco', 'Move to Tokyo', 'Move to Thailand', 'Move to Mexico', 'Move to Brazil', 'Move to LA', 'Move to Hollywood', 'Move to Moscow', 'Move to San Francisco', 'Move to Egypt', 'Move to The Bahamas', 'Move to Jamaica' ]
 const become = ['become a Magician', 'become a Pilot', 'become a Astronaut', 'become a Zoo Keeper', 'become a Rock Star', 'become a Model', 'become a Movie Star', 'become a Monk', 'become a Bee Keeper', 'become a Stuntman', 'become a poet', 'become a chef']
-const buy = ['buy a Ferari', 'buy a Lambo', 'buy Bitcoin', 'buy 42,069 Doge Coin', 'buy a Mansion', 'buy a Speedboat', 'buy a Jet Pack', 'buy a Tank', 'buy a Farm', 'buy a motorbike', 'buy a jetski' ]
+const buy = ['buy a Ferrari', 'buy a Lambo', 'buy Bitcoin', 'buy 42,069 Doge Coin', 'buy a Mansion', 'buy a Speedboat', 'buy a Jet Pack', 'buy a Tank', 'buy a Farm', 'buy a motorbike', 'buy a jetski', 'buy a helicopter' ]
 const learn  =['learn the Piano', 'learn the Flute', 'learn to code!', 'learn the Saxophone', 'learn the Drums', 'learn Taekwondo', 'master Kung Fu', 'learn to Breakdance', 'learn Ballet'  ]
 
 //array of the category array. We will select 3 at random
@@ -37,7 +37,7 @@ return userList
 const getItemsFromChosenCategories = (chosen) =>{
 
     const threeEvents = []
-    for (i =0; i <chosen.length; i++){
+    for (let i =0; i <chosen.length; i++){
         threeEvents.push(findItemInList(chosen[i]))
     }
     return threeEvents
